@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="../styles/styles.scss" rel="stylesheet">
+    <title>Travel app</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">TravelApp</a>
+        <nav>
+            <ul>
+                <li><a href="#home" class="item">Home</a></li>
+                <li><a href="#about" class="item">About</a></li>
+                <li><a href="#travel" class="item">Travel</a></li>
+                <li><a href="#trips" class="item">Flights</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main">
+        <div class="travel-img">
+            <img src="../media/images/rb_2148050086.png">
+        </div>
+        <h2 class="titles">Where? When?</h2>
+        <div class="travel">
+            <form class="flight-form" onsubmit="return Client.handleSubmit(event)">
+                <div class="form-info">
+                    <div class="country-info">
+                        <label for="country">Country: </label>
+                        <div class="input-container">
+                             <input type="text" name="country" id="country" placeholder="country">
+                        </div>
+                        <div id="invalid-name" style="color: red;">
+                            Please enter a valid name.
+                        </div>
+                    </div>
+                    <div class="dep-date">
+                        <label for="date">Departure date: </label>
+                        <div class="input-container">
+                              <input type="date" name="date" id="date">
+                        </div>
+                        <div id="invalid-date" style="color: red;">
+                            Please enter a valid date.
+                        </div>
+        
+                    </div>
+                    <button class="btn trip-btn">View details</button>
+                </div>
+
+                <div class="card-container">
+                    <div class="card" id="card">
+                        <div class="card-image">
+                        </div>
+                        <div class="card-content">
+                            <div class="flight-info"> 
+                                <h3>Flight info</h3>
+                                <p id="period"></p>
+                                <p id="country-name"></p>
+                                <p id="capital-name"></p>
+                                <p id="temp"></p>
+                            </div>
+                            <div class="weather-info">
+                                <h3>Typical Weather</h3>
+                                <p id="high-low"></p>
+                                <p id="weather"></p>
+                                
+                            </div>
+                        </div>
+                        <p id="existed"></p>
+                        <div class="button-container">
+                            <button class="btn trip-btn" onclick="addFlight()">+ Add trip</button>
+                        </div>
+                    </div>
+                </div>
+               
+            </form>
+        </div>
+    </section>
+
+    <section>
+        <div class="trips" id="trips">
+            <h2 class="titles" id="all-flights">All Flights</h2>
+            <h2 class="titles" id="no-flights">There are no flights yet</h2>
+            <div id="flights"></div>
+        </div>
+    </section>
+    <footer>
+        <p>Done by <span>Waed Khalifa</span></p>
+    </footer>
+</body>
+</html>
