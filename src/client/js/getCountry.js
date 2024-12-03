@@ -8,7 +8,11 @@ export const getCountry = async (country) => {
             },
             body: JSON.stringify({ countryName: country }),
         });
-        const data = await res.json();
+
+
+        const dataText = await res.text();
+        const data = JSON.parse(dataText);
+        // const data = await res.json();
         return data;
     }
     catch (error) {

@@ -1,5 +1,10 @@
 export const refreshData = (country, img, countryInfo, weather, days) => {
-    document.getElementById("capital-name").innerHTML=`<strong>Capital:</strong> ${countryInfo}`;
+    if(!countryInfo){
+        document.getElementById("capital-name").innerHTML="";
+    }
+    else if(countryInfo){
+        document.getElementById("capital-name").innerHTML=`<strong>Capital:</strong> ${countryInfo}`;
+    }
     document.getElementById("card").style.display = "block";
     document.getElementById("period").innerHTML = `${days} days left until your flight`;
     document.getElementById("period").style.fontWeight = "bold";

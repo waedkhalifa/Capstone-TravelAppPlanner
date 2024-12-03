@@ -140,7 +140,6 @@ app.post("/info", async (req,res) => {
         const data = await response.json();
         const capital = data[0].capital; 
         return res.json({capital:capital});
-        
     }
     catch(error){
         console.error("Error", error);

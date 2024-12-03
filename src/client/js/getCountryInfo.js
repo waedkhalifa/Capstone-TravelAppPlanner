@@ -9,7 +9,12 @@ export const getCountryInfo = async (name) => {
                 name: name,
             })
         });
+
+        if(!res.ok){
+            return JSON.stringify({ message: "Not Found" });
+        }
         const data = await res.json();
+        
         console.log("data= "+data);
         return data;
     }
