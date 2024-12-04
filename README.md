@@ -50,7 +50,6 @@ npm install
 Simply enter the country you wish to travel to, along with your departure date, and click "View details" to see flight information and the expected weather, then if you decide to travel you can add the flight to your travel list.
 
 ## Features
-- Video Background: Captivating video that sets the mood for travel.
 - Weather Information: Check the typical weather for any country you intend to visit.
 - Trip Planning: Simply enter your desired country and travel dates to view relevant flight and weather information.
 - Responsive Design: Fully functional on mobile and desktop devices.
