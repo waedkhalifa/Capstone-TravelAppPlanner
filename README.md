@@ -48,7 +48,7 @@ npm install
 
 ## Usage
 
-Simply enter the country you wish to travel to, along with your departure date, and click "View details" to see flight information and the expected weather, then if you decide to travel you can add the flight to your travel list.
+Simply enter the country/city you wish to travel to, along with your departure date, and click "View details" to see flight information and the expected weather, then if you decide to travel you can add the flight to your travel list.
 
 ## Features
 - Weather Information: Check the typical weather for any country you intend to visit.
