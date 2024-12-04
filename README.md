@@ -34,7 +34,8 @@ npm install
   ```bash
     npm start
     ```
-
+  4- You can enter any city, country, or city and country together, such as "Paris, France".
+  
 - As an additional step, countrylayer API was added as it is one of the suggestions included in the project to add the capital of the country if it exists:
   ```bash
      COUNTRYLAYER = dcce2f14c106cb39dcf95d923f033c84
