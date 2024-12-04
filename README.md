@@ -35,7 +35,10 @@ npm install
     npm start
     ```
 
-
+- As an additional step, countrylayer API was added as it is one of the suggestions included in the project to add the capital of the country if it exists:
+  ```bash
+     COUNTRYLAYER = dcce2f14c106cb39dcf95d923f033c84
+  ```
 - Node.js version: v18.16.0
 
 ## Usage
