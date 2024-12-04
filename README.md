@@ -21,6 +21,7 @@ npm install
 ```
 
 - To test the application, you will need to run two terminal windows and execute a series of commands:
+
   1- Open the first terminal and run the following to build the development environment:
     ```bash
     npm run build-dev
