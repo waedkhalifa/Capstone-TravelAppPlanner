@@ -40,8 +40,10 @@ npm install
      COUNTRYLAYER = dcce2f14c106cb39dcf95d923f033c84
   ```
 - Node.js version: v18.16.0
-- Screenshots
-![Example](./src/client/media/images/sc1.png)
+- Screenshots to illustrate how the app works properly:
+![Example1](./src/client/media/images/sc3.png)
+![Example2](./src/client/media/images/sc1.png)
+![Example3](./src/client/media/images/sc2.png)
 
 ## Usage
 
