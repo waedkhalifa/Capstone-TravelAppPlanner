@@ -19,6 +19,22 @@ TravelApp is a web application designed to assist you in discovering new destina
 ```bash
 npm install
 ```
+
+- To test the application, you will need to run two terminal windows and execute a series of commands:
+  1- Open the first terminal and run the following to build the development environment:
+    ```bash
+    npm run build-dev
+    ```
+  2-  Open the second terminal and run the following to build the production environment:
+    ```bash
+    npm run build-prod
+    ```
+  3- Once the build process has finished, start the server by running:
+  ```bash
+    npm start
+    ```
+
+
 - Node.js version: v18.16.0
 
 ## Usage
