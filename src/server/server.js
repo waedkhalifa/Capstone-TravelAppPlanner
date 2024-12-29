@@ -34,6 +34,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/flights', (req, res) => {
+
     if (flights.length === 0) {
         console.log("No flights available.");
     } else {
@@ -155,6 +156,7 @@ app.delete('/flights/:id', (req, res) => {
 
 
 app.listen(8001, function () {
+    const port=process.env.PORT || 8001;
     console.log('Example app listening on port 8001!');
 });
 

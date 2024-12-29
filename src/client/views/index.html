@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="../styles/styles.scss" rel="stylesheet">
     <title>Travel app</title>
 </head>
 <body>
@@ -22,7 +21,7 @@
 
     <section class="main">
         <div class="travel-img">
-            <img src="../media/images/rb_2148050086.png">
+            <img src="./rb_2148050086.png">
         </div>
         <h2 class="titles">Where? When?</h2>
         <div class="travel">
@@ -91,4 +90,15 @@
         <p>Done by <span>Waed Khalifa</span></p>
     </footer>
 </body>
+<script>
+    // Check that service workers are supported
+    if ('serviceWorker' in navigator) {
+        // Use the window load event to keep the page load performant
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/service-worker.js');
+        });
+    }
+
+
+    </script>
 </html>

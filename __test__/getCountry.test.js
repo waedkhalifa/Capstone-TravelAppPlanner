@@ -1,4 +1,4 @@
-const {getCountry} = require("../js");
+const {getCountry} = require("../src/client/js/getCountry.js");
 
 describe('getCountry', () => {
 test('should return valid country name', async () => {

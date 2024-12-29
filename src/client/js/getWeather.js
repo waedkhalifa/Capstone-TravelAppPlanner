@@ -1,3 +1,4 @@
+
 export const getWeather = async (destination, days) => {
     const res = await fetch("http://localhost:8001/getWeather", {
         method: "POST",

@@ -1,5 +1,5 @@
 
-const { withinWeekWeather } = require("../server");
+const { withinWeekWeather } = require("../src/server/withinWeekWeather");
 const dotenv = require('dotenv');
 dotenv.config();
 describe('withinWeekWeather function', () => {
